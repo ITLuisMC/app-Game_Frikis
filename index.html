@@ -1,0 +1,57 @@
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luis Martínez" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juego Sheldon</title>
+    <link href="assets/css/estilos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="secHeader">
+        <article>
+            <h2>JUEGO</h2><img src="assets/img/600px-Pierre_ciseaux_feuille_lézard_spock.svg.png" alt="logo-header" />
+            <h2>FREAKY</h2>
+        </article>
+    </header>
+    <section class="main">
+        <section class="cSecOpciones">
+            <div class="cDivReglas"><span onclick="reproduce()">AYUDA</span><audio id="idAudio"
+                    src="assets/audio/piedra_papel_tijera_lagarto_spock_sheldon_cooper.mp3"></audio>
+                <div class="cConReglas" id="idConReglas">
+                    <div id="idGloboUno"></div>
+                    <div id="idGloboDos"></div>
+                    <article><img id="idImagenAyuda" src="assets/img/piedra-papel-tijera-lagarto-spock.png" alt="reglas"
+                            onclick="ocultarBocatas()" /></article>
+                </div>
+            </div>
+        </section>
+        <div class="cDivJugador">
+            <h3>JUG</h3><span id="marcJug">0</span>
+        </div>
+        <section class="cSecJuego">
+            <div class="cEleccion" id="idLagarto"><img src="assets/img/lagarto.png" alt="lagarto" title="lagarto" /></div>
+            <div class="cEleccion" id="idSpock"><img src="assets/img/spock.png" alt="spock" title="spock" /></div>
+            <div class="cEleccion" id="idTijeras"><img src="assets/img/tijeras.png" alt="tijeras" title="tijeras" /></div>
+            <div class="cEleccion" id="idPapel"><img src="assets/img/papel.png" alt="papel" title="papel" /></div>
+            <div class="cEleccion" id="idPiedra"><img src="assets/img/piedra.png" alt="piedra" title="piedra" /></div>
+        </section>
+        <div class="cDivCpu">
+            <h3>CPU</h3><span id="marcCpu">0</span>
+        </div>
+        <div class="cDivUltimosResultados">
+            <ul>
+                <li id="muestraResultado"> </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p><a href="https://www.luismc.es">www.luismc.es</a></p>
+    </footer>
+    <script src="assets/js/js.js"></script>
+</body>
